@@ -233,7 +233,7 @@ def convert_doc_to_sent_graph(doc, stanza_nlp, word2vec, vector_threshold, bleu_
 
 def file_to_sent_graphs(
     data_file, word2vec, vector_threshold=0.65, bleu_threshold=0.75,
-    stanza_dir="/hits/fast/nlp/liuwi/stanza_resources", need_draw_graph=False
+    stanza_dir="data/stanza_resources", need_draw_graph=False
 ):
     """
     convert a data file into sent graphs
@@ -310,7 +310,7 @@ def file_to_sent_graphs(
 
 def corpus_to_sent_graphs(
     corpus_dir, word2vec, vector_threshold=0.65, bleu_threshold=0.75,
-    stanza_dir="/hits/fast/nlp/liuwi/stanza_resources", need_draw_graph=False
+    stanza_dir="data/stanza_resources", need_draw_graph=False
 ):
     """
     Args:
@@ -388,11 +388,11 @@ if __name__ == "__main__":
     corpus_dir = "data/dataset/test/1"
     embedding_file = "data/embedding/glove.840B.300d.txt"
     word_list, word2vec = corpus_guided_word2vec(
-        corpus_dir, embedding_file, stanza_dir="/hits/basement/nlp/liuwi/stanza_resources"
+        corpus_dir, embedding_file, stanza_dir="data/stanza_resources"
     )
     all_graphs, all_ids, all_labels, all_texts = corpus_to_sent_graphs(
         corpus_dir, word2vec, bleu_threshold=0.75, vector_threshold=0.65,
-        stanza_dir="/hits/basement/nlp/liuwi/stanza_resources"
+        stanza_dir="data/stanza_resources"
     )
     ids = list(itertools.chain.from_iterable(all_ids))
     graph_dir = os.path.join(corpus_dir, "doc_graph")

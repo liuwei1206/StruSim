@@ -55,7 +55,7 @@ def get_argparse():
     parser.add_argument("--k_node", default=5, type=int, help="k nodes subgraph features")
     parser.add_argument("--is_connected", default=False, action="store_true", help="only use weakly connected subgraph or not")
     parser.add_argument("--label_list", default="low, medium, high", type=str, help="all type of labels")
-    parser.add_argument("--stanza_dir", default="/hits/basement/nlp/liuwi/stanza_resources", type=str, help="the download dir of stanza model")
+    parser.add_argument("--stanza_dir", default="data/stanza_resources", type=str, help="the download dir of stanza model")
 
     # for model
     parser.add_argument("--fc1_hidden_dim", default=128, type=int, help="hidden dimension of the first fc layer")

@@ -31,6 +31,7 @@ def corpus_guided_word2vec(corpus_dir, embedding_file, stanza_dir="/hits/fast/nl
     save_dir = os.path.dirname(corpus_dir)  # different fold share the same vocab
     corpus_word2vec_file = os.path.join(save_dir, corpus_word2vec_name)
     if os.path.exists(corpus_word2vec_file):
+        print(" Embedding exists, loading.....")
         with open(corpus_word2vec_file, 'rb') as f:
             results = pickle.load(f)
             word_list = results[0]
@@ -54,7 +55,7 @@ def corpus_guided_word2vec(corpus_dir, embedding_file, stanza_dir="/hits/fast/nl
                                 words_in_corpus.add(word.text)
                                 words_in_corpus.add(word.lemma)
         words_in_corpus = list(words_in_corpus)
-
+        print(" Filter corpus-related embedding......")
         word_list = []
         word2vec = {}
         with open(embedding_file, 'r', encoding='utf-8') as f:

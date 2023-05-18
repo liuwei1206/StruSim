@@ -390,7 +390,6 @@ def main():
     if "toefl" in args.dataset.lower():
         args.input_dropout = 0.5
     params['input_dropout'] = args.input_dropout
-    params['featureless'] = args.featureless
     params['num_labels'] = args.num_labels
     params['num_gc_layer'] = args.num_gc_layer
 

@@ -5,6 +5,7 @@ import os
 import json
 import random
 import csv
+import stanza
 
 random.seed(106524)
 
@@ -173,8 +174,8 @@ def k_fold_for_gcdc(dataset):
 
 
 if __name__ == "__main__":
-    ## preprocess gcdc
-    """
+    ## 1.preprocess gcdc
+    # """
     dataset_list = ["Clinton", "Enron", "Yahoo", "Yelp"]
     mode_list = ["train", "test"]
     for dataset in dataset_list:
@@ -194,9 +195,13 @@ if __name__ == "__main__":
         os.system(command)
         command = "rm -f data/dataset/gcdc_{}/test.json".format(dataset.lower())
         os.system(command)
-    """
-    # dataset = "Clinton"
-    # gcdc_csv_reader(dataset, "train")
+    # """
 
-    ## preprocess toefl
+    ## 2.preprocess toefl
     toefl_csv_reader()
+
+    ## 3. download stanza
+    stanza_dir = "data/stanza_resources"
+    os.makedirs(stanza_dir, exist_ok=True)
+    # stanza.download("en", model_dir=stanza_dir)
+    

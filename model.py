@@ -30,15 +30,14 @@ class Custom_GCN(nn.Module):
         self.hidden_dim = params['hidden_dim']
         self.input_dropout = nn.Dropout(params['input_dropout'])
         self.dropout = nn.Dropout(params['dropout'])
-        self.featureless = params['featureless']
         self.num_labels = params['num_labels']
         self.num_gc_layer = params['num_gc_layer']
 
         total_layers = []
         if self.num_gc_layer == 1:
-            total_layers.append(GraphConvolution(self.input_dim, self.num_labels, featureless=self.featureless))
+            total_layers.append(GraphConvolution(self.input_dim, self.num_labels))
         else:
-            total_layers.append(GraphConvolution(self.input_dim, self.hidden_dim, featureless=self.featureless))
+            total_layers.append(GraphConvolution(self.input_dim, self.hidden_dim))
             for idx in range(1, self.num_gc_layer - 1):
                 total_layers.append(GraphConvolution(self.hidden_dim, self.hidden_dim))
             total_layers.append(GraphConvolution(self.hidden_dim, self.num_labels))
