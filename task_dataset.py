@@ -204,11 +204,6 @@ class PretrainedDataset(Dataset):
             self.segment_ids = all_segment_ids
             self.attention_mask = all_attention_mask
             self.labels = all_labels
-            print(all_input_ids[0][-20:])
-            print(all_labels[0])
-
-            print(all_input_ids[1][-20:])
-            print(all_labels[1])
 
         self.total_size = self.input_ids.shape[0]
 
