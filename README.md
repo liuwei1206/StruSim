@@ -5,7 +5,7 @@ Code for the ACL 2023 paper "Modeling Structural Similarities between Documents 
 Our working environment is Python 3.8. Before you run the code, please make sure you have installed all the required packages. You can achieve it by simply execute the shell as `sh requirements.sh`
 
 Then you should prepare embedding, xlnet, and stanza:
-1. Download embedding from [here](https://nlp.stanford.edu/data/glove.840B.300d.zip) and put it under the foler "data/embedding".
+1. Download embedding from [here](https://nlp.stanford.edu/data/glove.840B.300d.zip) and put it under the folder "data/embedding".
 2. Download xlnet-base_cased from [here](https://huggingface.co/xlnet-base-cased/tree/main) and put it under the folder "data/pretrained_models".
 3. Download stanza resource via `python3 preprocessing.py` and put it under the folder "data/stanza".
 
