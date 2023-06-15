@@ -1,6 +1,8 @@
 # Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks
-Code for the ACL 2023 paper "Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks"
+Code for our paper "Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks"
 
+<!-- Code for the ACL 2023 paper "Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks"
+ -->
 If any questions, please contact the email: willie1206@163.com
 
 ## 1 Requirement
@@ -24,4 +26,13 @@ To run experiments on Toefl, you should:
 3. Call the script. For example, you can `sh script/run_toefl1.sh` to run experiments on the prompt 1 of toefl corpus.
 
 ## 4 Citation
-You can
+```
+@misc{liu2023modeling,
+      title={Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks}, 
+      author={Wei Liu and Xiyan Fu and Michael Strube},
+      year={2023},
+      eprint={2306.06472},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
