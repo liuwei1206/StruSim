@@ -1,5 +1,5 @@
 # Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks
-Code for the ACL 2023 paper "Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks"
+Code for the ACL 2023 paper "[Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks](https://arxiv.org/pdf/2306.06472.pdf)"
 
 If any questions, please contact the email: willie1206@163.com
 
