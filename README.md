@@ -1,5 +1,5 @@
 # Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks
-Code for the ACL 2023 paper "[Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks](https://arxiv.org/pdf/2306.06472.pdf)"
+Code for the ACL 2023 paper "[Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks](https://aclanthology.org/2023.acl-long.431.pdf)"
 
 If any questions, please contact the email: willie1206@163.com
 
@@ -25,12 +25,18 @@ To run experiments on Toefl, you should:
 
 ## 4 Citation
 ```
-@misc{liu2023modeling,
-      title={Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks}, 
-      author={Wei Liu and Xiyan Fu and Michael Strube},
-      year={2023},
-      eprint={2306.06472},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{liu-etal-2023-modeling,
+    title = "Modeling Structural Similarities between Documents for Coherence Assessment with Graph Convolutional Networks",
+    author = "Liu, Wei  and
+      Fu, Xiyan  and
+      Strube, Michael",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.431",
+    pages = "7792--7808",
 }
+
 ```
