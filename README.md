@@ -17,7 +17,7 @@ To run experiments on GCDC, you should:
 2. Convert raw data into json files via `python3 preprocessing.py`
 3. Call the script. For example, you can `sh script/run_clinton.sh` to run experiments on gcdc_clinton.
 
-## 3 GCDC
+## 3 Toefl
 To run experiments on Toefl, you should:
 1. Put the raw corpora under the folder "data/dataset/raw/toefl"
 2. Convert raw data into json files via `python3 preprocessing.py`
